@@ -1,10 +1,10 @@
-# SentimentScope
+# Movie Review Sentiment Analysis
 
 **Movie-review sentiment classification with a custom PyTorch transformer.**
 
-SentimentScope explores the IMDb review dataset, builds a transformer classifier from scratch, and evaluates positive/negative sentiment predictions on held-out reviews. The saved notebook run achieved **77.58% test accuracy**.
+This project explores the IMDb review dataset, builds a transformer classifier from scratch, and evaluates positive/negative sentiment predictions on held-out reviews. The saved notebook run achieved **77.58% test accuracy**.
 
-[Explore the notebook](SentimentScope.ipynb) · [Portfolio](https://arishaafzal.github.io/#work)
+[Explore the notebook](Movie_Review_Sentiment_Analysis.ipynb) · [Portfolio](https://arishaafzal.github.io/#work)
 
 ## Results
 
@@ -34,8 +34,8 @@ Only the tokenizer is pretrained; this project does **not** fine-tune pretrained
 Use Python 3.10 or newer. A CUDA GPU is recommended for training; CPU execution is supported but slower.
 
 ```bash
-git clone https://github.com/ArishaAfzal/sentimentscope.git
-cd sentimentscope
+git clone https://github.com/ArishaAfzal/movie-review-sentiment-analysis.git
+cd movie-review-sentiment-analysis
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
@@ -58,7 +58,7 @@ aclImdb/
 Launch Jupyter and run the notebook cells in order:
 
 ```bash
-jupyter lab SentimentScope.ipynb
+jupyter lab Movie_Review_Sentiment_Analysis.ipynb
 ```
 
 Internet access is required on the first run to download the tokenizer. Dependencies are listed as compatible ranges rather than a lockfile of the original training environment.
